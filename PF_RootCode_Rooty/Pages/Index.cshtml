@@ -1,0 +1,91 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Rooty - Dashboard";
+}
+
+<div class="app-container">
+    <!-- Menú Lateral -->
+    <aside class="sidebar">
+        <div>
+            <div class="logo-container">
+                <div class="logo-icon">&lt;/&gt;</div>
+                <div class="logo-text">
+                    <h1>Rooty</h1>
+                    <span>by RootCode</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <a class="nav-item active"><i class="fa-solid fa-house"></i> Dashboard</a>
+                <a class="nav-item"><i class="fa-solid fa-user"></i> Mi Perfil</a>
+                <a class="nav-item"><i class="fa-solid fa-qrcode"></i> Acreditar Puntos</a>
+                <a class="nav-item"><i class="fa-solid fa-gift"></i> Recompensas</a>
+                <a class="nav-item"><i class="fa-solid fa-map-location-dot"></i> Mapa de Puntos</a>
+            </nav>
+        </div>
+
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: #6ee7b7;">POO II - 2026</span>
+        </div>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Topbar -->
+        <header class="topbar">
+            <div>
+                <h2>¡Hola, Usuario! 🌱</h2>
+                <p style="font-size: 0.85rem; color: #64748b;">Bienvenido de vuelta a tu panel de reciclaje.</p>
+            </div>
+            <div class="points-badge">
+                <i class="fa-solid fa-coins icon-coin"></i>
+                <div>
+                    <span class="label">MIS PUNTOS</span>
+                    <span class="value">1,250 pts</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- SECCIÓN: DASHBOARD -->
+        <section class="view-section active">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="card-icon green-bg"><i class="fa-solid fa-recycle"></i></div>
+                    <div>
+                        <span class="card-title">RECICLADO TOTAL</span>
+                        <p class="card-value">14.5 kg</p>
+                        <span class="card-subtext" style="color: #059669;">PET y PEAD</span>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="card-icon blue-bg"><i class="fa-solid fa-leaf"></i></div>
+                    <div>
+                        <span class="card-title">CO2 EVITADO</span>
+                        <p class="card-value">32.1 kg</p>
+                        <span class="card-subtext" style="color: #2563eb;">Impacto ambiental</span>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="card-icon amber-bg"><i class="fa-solid fa-award"></i></div>
+                    <div>
+                        <span class="card-title">LOGROS OBTENIDOS</span>
+                        <p class="card-value">3 Insignias</p>
+                        <span class="card-subtext" style="color: #d97706;">Héroe Sostenible</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h3 class="section-title"><i class="fa-solid fa-bolt" style="color: #059669;"></i> Acceso Rápido</h3>
+                <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 20px;">
+                    Selecciona una opción del menú lateral para navegar entre las secciones del sistema.
+                </p>
+                <div style="display: flex; gap: 12px;">
+                    <button class="btn-sm" style="padding: 12px 20px;">Registrar Entrega PET</button>
+                    <button class="btn-sm" style="padding: 12px 20px; background: #2563eb;">Ver Beneficios</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
